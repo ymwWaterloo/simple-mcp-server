@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "simple-mcp-server-stdio": {
+      "command": "npm",
+      "args": ["start"],
+      "cwd": "/full/path/to/simple-mcp-server",
+      "env": {
+        "TASKS_CSV_PATH": "/custom/path/tasks.csv",
+        "TRANSPORT": "stdio"
+      }
+    },
+    "simple-mcp-server-http": {
+      "command": "npm",
+      "args": ["start:http"],
+      "cwd": "/full/path/to/simple-mcp-server",
+      "env": {
+        "TASKS_CSV_PATH": "/custom/path/tasks.csv",
+        "TRANSPORT": "http",
+        "PORT": "3000"
+      }
+    }
+  }
+}
