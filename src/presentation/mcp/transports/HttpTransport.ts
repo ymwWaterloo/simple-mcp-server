@@ -15,7 +15,7 @@ export class HttpTransport {
   private transports: Map<string, { transport: SSEServerTransport | StreamableHTTPServerTransport; server: McpServer }> = new Map();
 
   constructor(port?: number) {
-    app = createMcpExpressApp({
+    this.app = createMcpExpressApp({
       host: "0.0.0.0",
       allowedHosts: [
          "localhost",
